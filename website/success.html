@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>You're in — StepKit</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #080813; --card: #132218; --green: #2ECC71;
+      --ring-bg: #1B3524; --sub: #7DAE92; --border: #1E3528;
+    }
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: var(--bg); color: #fff;
+      font-family: 'Inter', -apple-system, sans-serif;
+      min-height: 100vh; display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      padding: 2rem; text-align: center;
+      -webkit-font-smoothing: antialiased;
+    }
+    .card {
+      background: var(--card); border: 1px solid var(--green);
+      border-radius: 20px; padding: 3rem 2.5rem; max-width: 480px; width: 100%;
+    }
+    .icon { font-size: 3.5rem; margin-bottom: 1.25rem; }
+    h1 { font-size: 2rem; font-weight: 900; letter-spacing: -0.75px; margin-bottom: 0.75rem; }
+    h1 span { color: var(--green); }
+    p { color: var(--sub); font-size: 1rem; line-height: 1.65; margin-bottom: 0.75rem; }
+    .perks {
+      list-style: none; text-align: left;
+      background: var(--ring-bg); border-radius: 12px;
+      padding: 1.25rem 1.5rem; margin: 1.5rem 0;
+      display: flex; flex-direction: column; gap: 0.5rem;
+    }
+    .perks li { font-size: 0.9rem; display: flex; align-items: center; gap: 0.5rem; }
+    .perks li::before { content: "✓"; color: var(--green); font-weight: 800; flex-shrink: 0; }
+    .back {
+      display: inline-block; color: var(--sub);
+      font-size: 0.875rem; text-decoration: none; margin-top: 1rem;
+    }
+    .back:hover { color: #fff; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="icon">🎉</div>
+    <h1>You're a <span>Founding Member.</span></h1>
+    <p>Payment confirmed. You've locked in early access to StepKit before it hits the App Store and Play Store.</p>
+    <ul class="perks">
+      <li>Priority access at launch</li>
+      <li>Founding Member badge in-app</li>
+      <li>Lifetime ad-free experience</li>
+      <li>50% off any future premium tier</li>
+      <li>Direct line to the founder</li>
+    </ul>
+    <p>A confirmation was sent to your email. We'll reach out when the app is live.</p>
+    <a class="back" href="/">← Back to StepKit</a>
+  </div>
+</body>
+</html>

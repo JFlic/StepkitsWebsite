@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="StepKit — 1v1 walking accountability with real money on the line. Coming soon to iOS and Android.">
+  <meta property="og:title" content="StepKit — Walk. Bet. Win.">
+  <meta property="og:description" content="Challenge a friend. Bet per day. Miss your steps, you owe. Hit them, they owe you.">
+  <title>StepKit — Walk. Bet. Win.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <nav>
+    <div class="logo">StepKit</div>
+    <a href="#early-access" class="nav-cta">Get Early Access</a>
+  </nav>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero-section">
+      <div class="hero-ring-wrap">
+        <svg viewBox="0 0 200 200" width="200" height="200" aria-hidden="true">
+          <circle class="ring-bg-circle" cx="100" cy="100" r="80" stroke-width="14"/>
+          <circle class="ring-fill-circle" id="ring-fill" cx="100" cy="100" r="80" stroke-width="14"/>
+        </svg>
+        <div class="ring-inner">
+          <div class="ring-count" id="step-counter">0</div>
+          <div class="ring-unit">steps</div>
+          <div class="ring-pct" id="ring-pct">0%</div>
+        </div>
+      </div>
+
+      <div class="hero-text">
+        <h1>Run.<br><span class="green">Win Money.</span><br>Improve.</h1>
+        <p>1v1 walking accountability with real cash on the line. Miss your daily step goal — you owe. Hit it — they owe you. Settle on Venmo.</p>
+        <div class="hero-btns">
+          <a href="#early-access" class="btn-primary">Get Early Access — $4.99</a>
+          <a href="#waitlist" class="btn-secondary">Join Free Waitlist</a>
+        </div>
+        <div class="platforms">
+          <span>iOS</span><span class="dot">·</span><span>Android</span><span class="dot">·</span><span>Coming Soon</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-section">
+      <div class="section-eyebrow">How It Works</div>
+      <h2>Three steps. No excuses.</h2>
+      <div class="steps-row">
+        <div class="step">
+          <div class="step-num">1</div>
+          <h3>Challenge Someone</h3>
+          <p>Pick a friend, set a daily bet amount, set a duration. Share an invite code.</p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <h3>Walk Every Day</h3>
+          <p>Hit your step goal. The app checks your Apple Health or Google Fit automatically.</p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <h3>Settle Up</h3>
+          <p>At the end of the challenge, see who owes who. Settle on Venmo or cash.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits -->
+    <section id="benefits" class="benefits-section">
+      <div class="section-eyebrow">Why StepKit</div>
+      <h2>Most step apps have zero stakes.<br>StepKit fixes that.</h2>
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <div class="benefit-icon">💰</div>
+          <h3>Real Money, Real Motivation</h3>
+          <p>Set a daily bet amount with your challenger. Miss your step goal and the debt grows. Settle via Venmo or cash — no in-app payments, no fees.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">🏃</div>
+          <h3>Auto-Synced with Health</h3>
+          <p>Plugs directly into Apple Health on iOS and Google Health Connect on Android. No manual logging. No cheating.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">🎯</div>
+          <h3>Pure 1v1 Format</h3>
+          <p>No group challenges, no leaderboards, no noise. Just you vs. one other person. Simple accountability that actually works.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon">📊</div>
+          <h3>Live Running Tab</h3>
+          <p>See who owes who in real time. Full day-by-day history and a live balance so there are no surprises at settlement.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Early Access -->
+    <section id="early-access" class="access-section">
+      <div class="section-eyebrow">Early Access</div>
+      <h2>Get in before launch.</h2>
+      <p class="section-sub">Two ways to be a founding member.</p>
+
+      <div class="access-grid">
+
+        <!-- Free waitlist -->
+        <div class="access-card" id="waitlist">
+          <div class="access-tier">Free</div>
+          <div class="access-price-row">
+            <span class="access-price">$0</span>
+          </div>
+          <p class="access-desc">Get notified the moment StepKit launches. No spam — just the drop.</p>
+          <ul class="access-perks">
+            <li>Launch-day notification</li>
+            <li>No credit card needed</li>
+          </ul>
+          <form class="waitlist-form" id="waitlist-form">
+            <input type="email" placeholder="your@email.com" autocomplete="email" required>
+            <button type="submit" class="btn-primary full-w">Join Free Waitlist</button>
+          </form>
+          <p class="form-status" id="waitlist-status"></p>
+        </div>
+
+        <!-- Paid -->
+        <div class="access-card featured">
+          <div class="featured-badge">Best Deal</div>
+          <div class="access-tier">Founding Member</div>
+          <div class="access-price-row">
+            <span class="access-price">$4.99</span>
+            <span class="access-orig">one-time</span>
+          </div>
+          <p class="access-desc">Lock in founding member status before the app hits the store. Price goes up at launch.</p>
+          <ul class="access-perks">
+            <li>Priority access at launch</li>
+            <li>Founding Member badge in-app</li>
+            <li>Lifetime ad-free experience</li>
+            <li>50% off any future premium tier</li>
+            <li>Direct line to the founder</li>
+          </ul>
+          <button id="buy-btn" class="btn-primary full-w">Get Early Access — $4.99</button>
+          <p class="stripe-note">Secure checkout via Stripe</p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-logo">StepKit</div>
+    <p>© 2026 StepKit. Built by a guy who also needs to walk more.</p>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
