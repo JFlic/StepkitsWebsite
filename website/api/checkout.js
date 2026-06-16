@@ -1,17 +1,10 @@
-// NOTE: Stripe checkout disabled for initial Vercel deploy.
-// Re-enable by uncommenting below and setting STRIPE_SECRET_KEY,
-// STRIPE_PRICE_ID, BASE_URL env vars in Vercel.
-// const Stripe = require('stripe');
+const Stripe = require('stripe');
 
 module.exports = async (req, res) => {
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
-  // --- Stripe disabled for base deploy ---
-  return res.status(503).json({ error: 'Checkout temporarily unavailable' });
-
-  /*
   const { STRIPE_SECRET_KEY, STRIPE_PRICE_ID, BASE_URL } = process.env;
 
   if (!STRIPE_SECRET_KEY || !STRIPE_PRICE_ID || !BASE_URL) {
@@ -35,5 +28,4 @@ module.exports = async (req, res) => {
     console.error('Stripe error:', err.message);
     return res.status(500).json({ error: 'Failed to create checkout session' });
   }
-  */
 };
